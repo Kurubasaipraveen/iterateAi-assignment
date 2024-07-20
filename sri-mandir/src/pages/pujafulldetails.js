@@ -69,7 +69,7 @@ const PujaComponent = () => {
     <div className="puja-container">
       <div className="puja-header">
         <div className="puja-left">
-          <img src="https://res.cloudinary.com/dyutmmnia/image/upload/v1721371287/utzvqzeu9uqkhusaxnwe.png" alt="puja image" className='image7' />
+          <img src="https://res.cloudinary.com/dyutmmnia/image/upload/v1721371287/utzvqzeu9uqkhusaxnwe.png" alt="pujaimage" className='image7' />
         </div>
         <div className="puja-details">
           <h2>Saturday Shani Shingnapur Special Shani Saade Saati Peeda Shanti Mahapuja and Til Tel Abhishek</h2>
@@ -79,7 +79,9 @@ const PujaComponent = () => {
           <div className="countdown">
             {timeComponents.length ? timeComponents : <span>Time's up!</span>}
           </div>
-          <button className="puja-button" onClick={() => setShowReview(true)}>Select puja package</button>
+          <a href='#package'>
+          <button className="puja-button" onClick={() => setShowReview(false)}>Select puja package</button>
+          </a>
         </div>
       </div>
       <div className="links-row">
@@ -128,7 +130,9 @@ const PujaComponent = () => {
             <li>Opt for additional offerings like Vastra Daan, Anna Daan, Gau Seva, or Deep Daan to be done in your name.</li>
             <li>Upon completion, a video of your puja and offering will be shared with you on your registered WhatsApp number or can be found in your booking history within 3-4 days.</li>
             <li>Sacred Tirth Prasad will be sent to your address within 8-10 days.</li>
+            
             <button className="puja-button" onClick={() => setShowReview(true)}>PARTICIPATE</button>
+            
           </div>
           <div className='card1'>
             <h3 className='headpuja'>₹1251</h3>
@@ -138,7 +142,9 @@ const PujaComponent = () => {
             <li>Opt for additional offerings like Vastra Daan, Anna Daan, Gau Seva, or Deep Daan to be done in your name.</li>
             <li>Upon completion, a video of your puja and offering will be shared with you on your registered WhatsApp number or can be found in your booking history within 3-4 days.</li>
             <li>Sacred Tirth Prasad will be sent to your address within 8-10 days.</li>
+            
             <button className="puja-button" onClick={() => setShowReview(true)}>PARTICIPATE</button>
+            
           </div>
           <div className='card1'>
             <h3 className='headpuja'>₹2001</h3>
@@ -148,7 +154,9 @@ const PujaComponent = () => {
             <li>Opt for additional offerings like Vastra Daan, Anna Daan, Gau Seva, or Deep Daan to be done in your name.</li>
             <li>Upon completion, a video of your puja and offering will be shared with you on your registered WhatsApp number or can be found in your booking history within 3-4 days.</li>
             <li>Sacred Tirth Prasad will be sent to your address within 8-10 days.</li>
+            
             <button className="puja-button" onClick={() => setShowReview(true)}>PARTICIPATE</button>
+           
           </div>
           <div className='card1'>
             <h3 className='headpuja'>₹3001</h3>
@@ -158,7 +166,9 @@ const PujaComponent = () => {
             <li>Opt for additional offerings like Vastra Daan, Anna Daan, Gau Seva, or Deep Daan to be done in your name.</li>
             <li>Upon completion, a video of your puja and offering will be shared with you on your registered WhatsApp number or can be found in your booking history within 3-4 days.</li>
             <li>Sacred Tirth Prasad will be sent to your address within 8-10 days.</li>
+           
             <button className="puja-button" onClick={() => setShowReview(true)}>PARTICIPATE</button>
+          
           </div>
         </div>
         <div id="completepuja" className="card">
@@ -200,7 +210,9 @@ const PujaComponent = () => {
                   placeholder="Your full Name"
                 />
               </label>
+              <Link to='/puja-review'>
               <button type="submit">Next</button>
+              </Link>
             </form>
           </div>
         )}
